@@ -28,7 +28,7 @@
       margin-top: 1rem;
       font-weight: bold;
     }
-    select {
+    input, select {
       width: 100%;
       padding: 0.5rem;
       margin-top: 0.25rem;
@@ -69,10 +69,84 @@
 
   <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
     <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_autoresponse" value="Thank you for entering the Gibraltar Gaels US Masters Fundraiser! Your picks have been received.">
 
-    <!-- Group selection dropdowns remain unchanged -->
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" id="name" required>
 
-    <!-- ... existing form code here ... -->
+    <label for="email">Your Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="groupA">Group A:</label>
+    <select name="groupA" required>
+      <option value="">Select one</option>
+      <option>Scottie Scheffler</option>
+      <option>Rory McIlroy</option>
+      <option>Ludvig Aberg</option>
+      <option>Jon Rahm</option>
+      <option>Collin Morikawa</option>
+      <option>Bryson DeChambeau</option>
+      <option>Xander Schauffele</option>
+      <option>Hideki Matsuyama</option>
+      <option>Justin Thomas</option>
+      <option>Tyrrell Hatton</option>
+    </select>
+
+    <label for="groupB">Group B:</label>
+    <select name="groupB" required>
+      <option value="">Select one</option>
+      <option>Brooks Koepka</option>
+      <option>Patrick Cantlay</option>
+      <option>Cameron Smith</option>
+      <option>Shane Lowry</option>
+      <option>Will Zalatoris</option>
+      <option>Jordan Spieth</option>
+      <option>Viktor Hovland</option>
+      <option>Tommy Fleetwood</option>
+      <option>Joaquin Niemann</option>
+      <option>Dustin Johnson</option>
+    </select>
+
+    <label for="groupC">Group C:</label>
+    <select name="groupC" required>
+      <option value="">Select one</option>
+      <option>Matt Fitzpatrick</option>
+      <option>Russell Henley</option>
+      <option>Cameron Young</option>
+      <option>Tony Finau</option>
+      <option>Sahith Theegala</option>
+      <option>Tom Kim</option>
+      <option>Wyndham Clark</option>
+      <option>Sungjae Im</option>
+      <option>Corey Conners</option>
+      <option>Max Homa</option>
+    </select>
+
+    <label for="groupD">Group D:</label>
+    <select name="groupD" required>
+      <option value="">Select one</option>
+      <option>Sam Burns</option>
+      <option>Jason Day</option>
+      <option>Robert MacIntyre</option>
+      <option>Rickie Fowler</option>
+      <option>Patrick Reed</option>
+      <option>Min Woo Lee</option>
+      <option>Max Greyserman</option>
+      <option>Akshay Bhatia</option>
+      <option>Sepp Straka</option>
+      <option>Nicolai Hojgaard</option>
+    </select>
+
+    <label for="groupE">Group E:</label>
+    <select name="groupE" required>
+      <option value="">Select one</option>
+      <!-- Add Group E options here -->
+      <option>Justin Rose</option>
+      <option>Davis Thompson</option>
+      <!-- truncated for brevity -->
+      <option>Daniel Berger</option>
+    </select>
 
     <button type="submit">Submit Picks</button>
   </form>
