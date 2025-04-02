@@ -1,111 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gibraltar Gaels US Masters Fundraiser</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background-color: #d32f2f; /* Red color for the club theme */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #d32f2f;
-        }
-        .button {
-            background-color: #1976d2; /* Blue button color */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-align: center;
-            display: block;
-            margin: 10px 0;
-        }
-        .button:hover {
-            background-color: #1565c0;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .faq {
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gibraltar Gaels US Masters Fundraiser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #c00000;
+    }
+    form {
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #c00000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a00000;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Gibraltar Gaels US Masters Fundraiser</h1>
-    <p>Enter your predictions and support Gibraltar Gaels GAA!</p>
-</header>
+  <h1>Gibraltar Gaels US Masters Fundraiser</h1>
 
-<section>
-    <h2>How It Works</h2>
-    <ul>
-        <li>Select one golfer from each of the five groups.</li>
-        <li>Points are awarded based on final standings.</li>
-        <li>Entry fee: €10 (paid via Revolut).</li>
-        <li>Winner takes all! Prize pool goes to the highest scorer.</li>
-    </ul>
-</section>
+  <form id="predictionForm">
+    <label for="groupA">Group A:</label>
+    <select name="groupA" required>
+      <option value="">Select one</option>
+      <option>Scottie Scheffler</option>
+      <option>Rory McIlroy</option>
+      <option>Ludvig Aberg</option>
+      <option>Jon Rahm</option>
+      <option>Collin Morikawa</option>
+      <option>Bryson DeChambeau</option>
+      <option>Xander Schauffele</option>
+      <option>Hideki Matsuyama</option>
+      <option>Justin Thomas</option>
+      <option>Tyrrell Hatton</option>
+    </select>
 
-<section>
-    <h2>Enter Your Predictions</h2>
-    <form action="#" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="selections" placeholder="Enter your 5 selected golfers" required></textarea>
-        <button type="submit" class="button">Submit Entry</button>
-    </form>
-</section>
+    <label for="groupB">Group B:</label>
+    <select name="groupB" required>
+      <option value="">Select one</option>
+      <option>Brooks Koepka</option>
+      <option>Patrick Cantlay</option>
+      <option>Cameron Smith</option>
+      <option>Shane Lowry</option>
+      <option>Will Zalatoris</option>
+      <option>Jordan Spieth</option>
+      <option>Viktor Hovland</option>
+      <option>Tommy Fleetwood</option>
+      <option>Joaquin Niemann</option>
+      <option>Dustin Johnson</option>
+    </select>
 
-<section>
-    <h2>Payment Details</h2>
-    <p>Send €10 via Revolut to Killian Daly.</p>
-    <button class="button">Pay Now (QR Code Coming Soon)</button>
-</section>
+    <label for="groupC">Group C:</label>
+    <select name="groupC" required>
+      <option value="">Select one</option>
+      <option>Matt Fitzpatrick</option>
+      <option>Russell Henley</option>
+      <option>Cameron Young</option>
+      <option>Tony Finau</option>
+      <option>Sahith Theegala</option>
+      <option>Tom Kim</option>
+      <option>Wyndham Clark</option>
+      <option>Sungjae Im</option>
+      <option>Corey Conners</option>
+      <option>Max Homa</option>
+    </select>
 
-<section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <ul>
-        <li><strong>What is the entry fee?</strong> The entry fee is €10, which goes directly to supporting Gibraltar Gaels GAA.</li>
-        <li><strong>When is the deadline to enter?</strong> All entries must be submitted before the first tee-off on Thursday, April 10th, 2025.</li>
-        <li><strong>How are the points awarded?</strong> Points are awarded based on the final standings in each of the five groups, with bonuses for predicting the overall winner and leading at the end of any round.</li>
-    </ul>
-</section>
+    <label for="groupD">Group D:</label>
+    <select name="groupD" required>
+      <option value="">Select one</option>
+      <option>Sam Burns</option>
+      <option>Jason Day</option>
+      <option>Robert MacIntyre</option>
+      <option>Rickie Fowler</option>
+      <option>Patrick Reed</option>
+      <option>Min Woo Lee</option>
+      <option>Max Greyserman</option>
+      <option>Akshay Bhatia</option>
+      <option>Sepp Straka</option>
+      <option>Nicolai Hojgaard</option>
+    </select>
 
-<footer>
-    <p style="text-align:center; padding: 10px; background-color: #333; color: white;">&copy; 2025 Gibraltar Gaels GAA Fundraiser</p>
-</footer>
+    <label for="groupE">Group E:</label>
+    <select name="groupE" required>
+      <option value="">Select one</option>
+      <!-- Includes original + all additional players not on your first list -->
+      <option>Justin Rose</option>
+      <option>Davis Thompson</option>
+      <option>Maverick McNealy</option>
+      <option>Rasmus Hojgaard</option>
+      <option>Adam Scott</option>
+      <option>Si Woo Kim</option>
+      <option>Brian Harman</option>
+      <option>Billy Horschel</option>
+      <option>Thomas Detry</option>
+      <option>Nick Dunlap</option>
+      <option>Thriston Lawrence</option>
+      <option>Keegan Bradley</option>
+      <option>Byeong Hun An</option>
+      <option>Taylor Pendrith</option>
+      <option>Cameron Davis</option>
+      <option>Harris English</option>
+      <option>Christiaan Bezuidenhout</option>
+      <option>Ryan Fox</option>
+      <option>Kurt Kitayama</option>
+      <option>Sergio Garcia</option>
+      <option>J.T. Poston</option>
+      <option>Eric Cole</option>
+      <option>Austin Eckroat</option>
+      <option>Phil Mickelson</option>
+      <option>Chris Kirk</option>
+      <option>Denny McCarthy</option>
+      <option>Jhonattan Vegas</option>
+      <option>Ángel Cabrera</option>
+      <option>Fred Couples</option>
+      <option>Zach Johnson</option>
+      <option>Bernhard Langer</option>
+      <option>José María Olazábal</option>
+      <option>Charl Schwartzel</option>
+      <option>Vijay Singh</option>
+      <option>Bubba Watson</option>
+      <option>Mike Weir</option>
+      <option>Danny Willett</option>
+      <option>Tom Hoge</option>
+      <option>Patton Kizzire</option>
+      <option>Aaron Rai</option>
+      <option>Davis Riley</option>
+      <option>J.J. Spaun</option>
+      <option>Stephan Jäger</option>
+      <option>Michael Kim</option>
+      <option>Laurie Canter</option>
+      <option>Brian Campbell</option>
+      <option>Rafael Campos</option>
+      <option>Joe Highsmith</option>
+      <option>Matt McCarty</option>
+      <option>Kevin Yu</option>
+      <option>Daniel Berger</option>
+    </select>
+
+    <button type="submit">Submit Picks</button>
+  </form>
 
 </body>
 </html>
